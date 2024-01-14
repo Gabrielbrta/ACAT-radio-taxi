@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/acat.jpeg" type="image/x-icon">
+    <title>Cálculos ACAT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <form action="#">
+            <div class="select">
+                <label for="calc">Selecione o Cálculo:</label>
+                <select name="calculo" id="calc">
+                    <option value="band1">BANDEIRA 1 (Petrobras)</option>
+                    <option value="band2">BANDEIRA 2 (Petrobras)</option>
+                    <option value="band3">YARA BANDEIRA 2</option>
+                    <option value="band3">BANDEIRA 1 (Normal)</option>
+                    <option value="band3">BANDEIRA 2 (Normal)</option>
+                </select>
+            </div>
+            <div class="card">
+                <div class="card-container">
+                    <label for="" class="title">Bandeira 1</label>
+                    <label for="km" class="red">KM</label>
+                    <input type="text" name="km" id="km">
+                    <span>x  3,88</span>
+                    <span>+  5,73</span>
+                    <span>+ </span>
+                    <label for="hp" class="red">HP</label>
+                    <input type="text" name="hp" id="hp">
+                    <p class="text">Resultado:</p>
+                    <p class="result"></p>
+                    <button>calcular</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-container">
+                    <label for="" class="title">Bandeira 2</label>
+                    <label for="km" class="red">KM</label>
+                    <input type="text" name="km" id="km">
+                    <span>x  4,66</span>
+                    <span>+  5,73</span>
+                    <span>+ </span>
+                    <label for="hp" class="red">HP</label>
+                    <input type="text" name="hp" id="hp">
+                    <p class="text">Resultado:</p>
+                    <p class="result"></p>
+                    <button>calcular</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-container">
+                    <label for="" class="title">YARA Bandeira 2</label>
+                    <label for="km" class="red">KM</label>
+                    <input type="text" name="km" id="km">
+                    <span>x  4,80</span>
+                    <span>+  5,90</span>
+                    <span>+ </span>
+                    <label for="hp" class="red">HP</label>
+                    <input type="text" name="hp" id="hp">
+                    <span>- 5%</span>
+                    <p class="text">Resultado:</p>
+                    <p class="result"></p>
+                    <button>calcular</button>
+                </div>
+            </div>
+        </form>
+    <script src="./scritp.js"></script>
+</body>
+</html>

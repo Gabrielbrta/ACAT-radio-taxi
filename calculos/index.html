@@ -15,11 +15,11 @@
             <div class="select">
                 <label for="calc">Selecione o Cálculo:</label>
                 <select name="calculo" id="calc">
-                    <option value="band1">BANDEIRA 1 (Petrobras)</option>
-                    <option value="band2">BANDEIRA 2 (Petrobras)</option>
-                    <option value="band3">YARA BANDEIRA 2</option>
-                    <option value="band3">BANDEIRA 1 (Normal)</option>
-                    <option value="band3">BANDEIRA 2 (Normal)</option>
+                    <option value="0">BANDEIRA 1 (PETRO)</option>
+                    <option value="1">BANDEIRA 2 (PETRO)</option>
+                    <option value="2">BANDEIRA 1 (NORMAL)</option>
+                    <option value="3">BANDEIRA 2 (NORMAL)</option>
+                    <option value="4">YARA BANDEIRA 2</option>
                 </select>
             </div>
             <div class="card">
@@ -44,6 +44,36 @@
                     <input type="text" name="km" id="km">
                     <span>x  4,66</span>
                     <span>+  5,73</span>
+                    <span>+ </span>
+                    <label for="hp" class="red">HP</label>
+                    <input type="text" name="hp" id="hp">
+                    <p class="text">Resultado:</p>
+                    <p class="result"></p>
+                    <button>calcular</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-container">
+                    <label for="" class="title">Bandeira 1 (NORMAL)</label>
+                    <label for="km" class="red">KM</label>
+                    <input type="text" name="km" id="km">
+                    <span>x  4,00</span>
+                    <span>+  5,90</span>
+                    <span>+ </span>
+                    <label for="hp" class="red">HP</label>
+                    <input type="text" name="hp" id="hp">
+                    <p class="text">Resultado:</p>
+                    <p class="result"></p>
+                    <button>calcular</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-container">
+                    <label for="" class="title">Bandeira 2 (NORMAL)</label>
+                    <label for="km" class="red">KM</label>
+                    <input type="text" name="km" id="km">
+                    <span>x  4,80</span>
+                    <span>+  5,90</span>
                     <span>+ </span>
                     <label for="hp" class="red">HP</label>
                     <input type="text" name="hp" id="hp">

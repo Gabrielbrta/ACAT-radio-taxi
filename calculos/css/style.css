@@ -121,8 +121,11 @@ button {
     transition: .3s;
 
     &:hover {
-    background: #150bab;
+        background-color: #150bab;
 
+    }
+    &:active {
+        background-color: #120d63;
     }
 }
 
@@ -201,5 +204,9 @@ button.white {
     &:hover {
     background: #150bab;
 
+    }
+
+    &:active {
+        background-color: #120d63;
     }
 }

@@ -28,6 +28,7 @@ class Calculos {
         this.desconto = 3.88;
         let resultado = (((this.km * this.desconto) + this.valInicio) + this.hp);
         return resultado;
+        
     }
 
     bandeira_2_petro() {
@@ -43,6 +44,13 @@ class Calculos {
         let resultado = (((this.km * this.desconto) + this.valInicio) + this.hp);
         let porcentagem = (5 / 100) * resultado;
         resultado = this.km == '' ? resultado : resultado - porcentagem;
+        return resultado;
+    }
+    
+    prodesan() {
+        this.valInicio = 4.30
+        this.desconto = 4.30;
+        let resultado = (((this.km * this.desconto) + this.valInicio) + this.hp);
         return resultado;
     }
 }

@@ -68,6 +68,12 @@ export function init() {
                         results[4].innerHTML = calculo;
                     } else results[4].innerHTML = erro;
                     break;
+                case 5:
+                    if (Number(verificar_virgula(inputs[10].value)) || Number(verificar_virgula(inputs[11].value))) {
+                        calculo = new Calculos(Number(verificar_virgula(inputs[10].value)), Number(verificar_virgula(inputs[11].value))).prodesan();
+                        results[5].innerHTML = calculo;
+                    } else results[5].innerHTML = erro;
+                    break;
                 default:
                     results.innerHTML = "Ocorreu um erro!";
                     break;

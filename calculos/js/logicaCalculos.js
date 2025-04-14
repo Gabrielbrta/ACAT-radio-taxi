@@ -64,15 +64,21 @@ export function init() {
                     break;
                 case 4:
                     if (Number(verificar_virgula(inputs[8].value)) || Number(verificar_virgula(inputs[9].value))) {
-                        calculo = new Calculos(Number(verificar_virgula(inputs[8].value)), Number(verificar_virgula(inputs[9].value))).yara_bandeira2();
+                        calculo = new Calculos(Number(verificar_virgula(inputs[8].value)), Number(verificar_virgula(inputs[9].value))).yara_bandeira1();
                         results[4].innerHTML = calculo;
                     } else results[4].innerHTML = erro;
                     break;
                 case 5:
                     if (Number(verificar_virgula(inputs[10].value)) || Number(verificar_virgula(inputs[11].value))) {
-                        calculo = new Calculos(Number(verificar_virgula(inputs[10].value)), Number(verificar_virgula(inputs[11].value))).prodesan();
+                        calculo = new Calculos(Number(verificar_virgula(inputs[10].value)), Number(verificar_virgula(inputs[11].value))).yara_bandeira2();
                         results[5].innerHTML = calculo;
                     } else results[5].innerHTML = erro;
+                    break;
+                case 6:
+                    if (Number(verificar_virgula(inputs[12].value)) || Number(verificar_virgula(inputs[13].value))) {
+                        calculo = new Calculos(Number(verificar_virgula(inputs[12].value)), Number(verificar_virgula(inputs[13].value))).prodesan();
+                        results[6].innerHTML = calculo;
+                    } else results[6].innerHTML = erro;
                     break;
                 default:
                     results.innerHTML = "Ocorreu um erro!";

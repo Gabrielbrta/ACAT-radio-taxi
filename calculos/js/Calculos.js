@@ -57,7 +57,7 @@ class Calculos {
     
     prodesan() {
         this.valInicio = 4.30
-        this.desconto = 4.30;
+        this.desconto = 4.55;
         let resultado = (((this.km * this.desconto) + this.valInicio) + this.hp);
         return resultado;
     }

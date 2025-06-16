@@ -210,3 +210,42 @@ button.white {
         background-color: #120d63;
     }
 }
+
+.container-custom{
+    background-color: rgb(34, 30, 30);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    h2 {
+        color: white !important;
+    }
+    input {
+        border-radius: 10px;
+        margin: 5px;
+        outline: none;
+        border: none;
+        height: 35px;
+        width: 100%;
+    }
+
+    .buttons {
+        display: flex;
+        
+        button, input {
+            border-radius: 10px;
+            margin: 5px;
+            outline: none;
+            border: none;
+        }
+        input {
+            width: 30%;
+        }
+    }
+}
+
+
+/*# sourceMappingURL=styles.css.map */

@@ -44,36 +44,42 @@ export function init() {
                         results[0].innerHTML = calculo;
                     } else results[0].innerHTML = erro;
                     break;
+                    
                 case 1:
                     if (Number(verificar_virgula(inputs[2].value)) || Number(verificar_virgula(inputs[3].value))) {
                         calculo = new Calculos(Number(verificar_virgula(inputs[2].value)), Number(verificar_virgula(inputs[3].value))).bandeira_2_petro();
                         results[1].innerHTML = calculo;
                     } else results[1].innerHTML = erro;
                     break;
+
                 case 2:
                     if (Number(verificar_virgula(inputs[4].value)) || Number(verificar_virgula(inputs[5].value))) {
                         calculo = new Calculos(Number(verificar_virgula(inputs[4].value)), Number(verificar_virgula(inputs[5].value))).bandeira_1_normal();
                         results[2].innerHTML = calculo;
                     } else results[2].innerHTML = erro;
                     break;
+
                 case 3:
                     if (Number(verificar_virgula(inputs[6].value)) || Number(verificar_virgula(inputs[7].value))) {
                         calculo = new Calculos(Number(verificar_virgula(inputs[6].value)), Number(verificar_virgula(inputs[7].value))).bandeira_2_normal();
                         results[3].innerHTML = calculo;
                     } else results[3].innerHTML = erro;
                     break;
+
                 case 4:
                     if (Number(verificar_virgula(inputs[8].value)) || Number(verificar_virgula(inputs[9].value))) {
                         calculo = new Calculos(Number(verificar_virgula(inputs[8].value)), Number(verificar_virgula(inputs[9].value))).yara_bandeira1();
                         results[4].innerHTML = calculo;
                     } else results[4].innerHTML = erro;
                     break;
+
                 case 5:
                     if (Number(verificar_virgula(inputs[10].value)) || Number(verificar_virgula(inputs[11].value))) {
                         calculo = new Calculos(Number(verificar_virgula(inputs[10].value)), Number(verificar_virgula(inputs[11].value))).yara_bandeira2();
                         results[5].innerHTML = calculo;
                     } else results[5].innerHTML = erro;
                     break;
+
                 case 6:
                     if (Number(verificar_virgula(inputs[12].value)) || Number(verificar_virgula(inputs[13].value))) {
                         calculo = new Calculos(Number(verificar_virgula(inputs[12].value)), Number(verificar_virgula(inputs[13].value))).prodesan();

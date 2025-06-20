@@ -3,6 +3,7 @@ const nome = document.querySelector('#nome');
 const bandeira = document.querySelector('#bandeira');
 const bandeirada = document.querySelector('#bandeirada');
 const desconto = document.querySelector('#desconto');
+let i = 1;
 
 function verificar_virgula(valor) {
     if(String(valor).includes(",")) {
@@ -11,6 +12,9 @@ function verificar_virgula(valor) {
     } else return Number(valor);
 }
 
+function newCard() {
+    createCard(pickData());
+}
 function pickData() {
     const data = [nome.value, verificar_virgula(bandeira.value), verificar_virgula(bandeirada.value), desconto.value];
     return data;
@@ -39,12 +43,20 @@ function createCard(datas) {
                     <p class="result"></p>
                     <button type="button">calcular</button>
                 </div>
-            </div>`
+            </div>`;
+            setNewCalc(name,bandeira,bandeirada, desconto, i++);
     } else {
         alert("ocorreu um erro!");
     }
 }
 
-button.addEventListener('click', () => createCard(pickData()));
+function setNewCalc(name, bandeira, bandeirada, desconto, i) {
+    localStorage.setItem(`nome${i}`, `${name}`);
+    localStorage.setItem(`bandeira${i}`, `${bandeira}`);
+    localStorage.setItem(`bandeirada${i}`, `${bandeirada}`);
+    localStorage.setItem(`desconto${i}`, `${desconto}`);
+}
+
+button.addEventListener('click', () => newCard());
 
 
